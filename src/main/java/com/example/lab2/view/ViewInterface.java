@@ -4,5 +4,4 @@ import javafx.stage.Stage;
 
 public interface ViewInterface {
     void processing();
-    void processing(Stage stage);
 }

@@ -30,17 +30,4 @@ public class CLIView implements ViewInterface {
             displayTopic(controller.get());
         }
     }
-
-    @Override
-    public void processing(Stage stage) {
-        while (true) {
-            Scanner scanner = new Scanner(System.in);
-            System.out.println("\nUpdate Title\n"
-                    + "       Content");
-            String newTitle = scanner.nextLine();
-            String newContent = scanner.nextLine();
-            controller.update(newTitle, newContent);
-            displayTopic(controller.get());
-        }
-    }
 }

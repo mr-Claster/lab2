@@ -12,19 +12,16 @@ import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 public class JavaFxView implements ViewInterface {
-    private TopicController topicController;
+    private final TopicController topicController;
+    private final Stage stage;
 
-    public JavaFxView(TopicController topicController) {
+    public JavaFxView(TopicController topicController, Stage stage) {
         this.topicController = topicController;
+        this.stage = stage;
     }
 
     @Override
     public void processing() {
-
-    }
-
-    @Override
-    public void processing(Stage stage) {
         Label titleLabel = new Label();
         Label contentLabel = new Label();
         VBox vBox = new VBox(10);
