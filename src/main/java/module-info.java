@@ -6,4 +6,8 @@ module com.example.lab2 {
 
     opens com.example.lab2 to javafx.fxml;
     exports com.example.lab2;
+    exports com.example.lab2.view;
+    opens com.example.lab2.view to javafx.fxml;
+    exports com.example.lab2.view.impl;
+    opens com.example.lab2.view.impl to javafx.fxml;
 }
